@@ -1,0 +1,45 @@
+.case {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.ligne {
+    max-width: 835px;
+}
+
+.ligne:nth-child(even) > .couleur-case:nth-child(odd),
+.ligne:nth-child(odd) > .couleur-case:nth-child(even) {
+    background-color: rgb(80, 80, 80);
+}
+.ligne:nth-child(even) > .couleur-case:nth-child(even),
+.ligne:nth-child(odd) > .couleur-case:nth-child(odd) {
+    background-color: rgb(243, 226, 204);
+}
+
+.couleur-case.case:hover {
+    border-style: solid;
+    border-width: 1px;
+    margin: 1px;
+}
+
+.caseSelection {
+    border-style: solid;
+    border-width: 2px;
+    margin: 0px;
+    background-color: gold !important;
+}
+
+.checkKingCase, .checkCase {
+    background-color: red !important;
+}
+
+.redBackground{
+    background-color: red !important;
+ }
+
+.greenBackground {
+    background-color: yellowgreen !important;
+}   
