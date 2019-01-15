@@ -1,0 +1,11 @@
+<div class='ligne' *ngFor="let y of 8|times">
+  <app-case 
+  [ngClass]="modifClassCases(x, y)" 
+
+  *ngFor="let x of 8|times" 
+  class="case couleur-case" 
+  [coordX]="x" 
+  [coordY]="y" 
+  [piece]="getPiece(x, y)" 
+  (click)="echecEtMat != null || clickCase(x, y)"></app-case>
+</div>

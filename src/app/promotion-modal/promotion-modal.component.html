@@ -1,0 +1,10 @@
+<h2 class="center" mat-dialog-title>Promotion !</h2>
+<mat-dialog-content>Par quelle pièce souhaitez-vous remplacer votre pion ?</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close="{{returnPiece('tour')}}"><img [src]="lienTour"></button>
+  <button mat-button mat-dialog-close="{{returnPiece('cav')}}"><img [src]="lienCavalier"></button>
+  <button mat-button mat-dialog-close="{{returnPiece('fou')}}"><img [src]="lienFou"></button>
+  <button mat-button mat-dialog-close="{{returnPiece('dame')}}"><img [src]="lienDame"></button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog.
+  <button mat-button [mat-dialog-close]="true">Yes</button> -->
+</mat-dialog-actions>
